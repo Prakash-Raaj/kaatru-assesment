@@ -1,38 +1,493 @@
-.App {
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #adcef4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80vw;
+  margin-top: 50px;
+  border-radius: 20px;
+  background-color: #e4f1ff;
+  display: flex;
+}
+
+.right-wrapper {
+  width: 1900px;
+  padding: 40px;
+  border-radius: 20px;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.intro h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 23px;
+}
+
+.intro p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.user span {
+  margin-right: 10px;
+}
+.user-img {
+  width: 65px;
+  height: 65px;
+  border-radius: 25px;
+}
+
+.gauge-chart {
+  background-color: #ffffff;
+  width: 250px;
+  height: 150px;
+  border-radius: 39px;
+  padding: 25px;
+}
+
+.wind-gauge {
+  transform: translateX(-20px);
+}
+.wind {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 0px 10px;
+}
+
+.wind p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.icons-wrapper span {
+  color: #ffffff;
+}
+.icons-wrapper {
+  background-color: #5c9ce5;
+  border-radius: 5px;
+  padding: 0 3px;
+}
+
+.feels-like {
+  background-color: #ffffff;
+  width: 250px;
+  height: 150px;
+  border-radius: 39px;
+  padding: 25px;
+}
+
+.bar {
+  width: 95%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.number-1 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  opacity: 0.2;
+  margin-right: 35px;
+}
+.number-2 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  opacity: 0.2;
+  margin-right: 35px;
+  margin-left: 45px;
+}
+.number-3 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  opacity: 0.2;
+  margin-left: 40px;
+}
+
+.value-bar {
+  font-size: 25px;
+  margin-top: 18px;
+  margin-bottom: 0;
+  color: #000000;
+  font-weight: 600;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.humidity {
+  background-color: #ffffff;
+  width: 250px;
+  height: 150px;
+  border-radius: 39px;
+  padding: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.humid-bars {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.humid-value {
+  font-size: 25px;
+  margin-top: 18px;
+  margin-bottom: 0;
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+}
+
+.humid-value span {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.humid-bars-value {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  opacity: 0.2;
+}
+
+.Rain {
+  background-color: #ffffff;
+  width: 250px;
+  height: 150px;
+  border-radius: 39px;
+  padding: 25px;
+}
+
+.number-1-rain {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  opacity: 0.2;
+  margin-right: 8px;
+}
+
+.number-2-rain {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  opacity: 0.2;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.number-3-rain {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  opacity: 0.2;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.number-4-rain {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  opacity: 0.2;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.number-5-rain {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  opacity: 0.2;
+  margin-left: 8px;
+}
+
+.rain-value {
+  font-size: 25px;
+  margin-top: 18px;
+  margin-bottom: 0;
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+}
+
+.uv-index {
+  background-color: #ffffff;
+  width: 250px;
+  height: 150px;
+  border-radius: 39px;
+  padding: 25px;
+}
+
+.uv-index-value {
+  font-size: 28px;
+  margin-top: 18px;
+  margin-bottom: 0;
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+}
+
+.uv-index-value span {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.precipitation {
+  background-color: #ffffff;
+  width: 250px;
+  height: 150px;
+  border-radius: 39px;
+  padding: 25px;
+}
+
+.more-details {
   display: flex;
   flex-direction: column;
+  margin-top: 60px;
+}
+
+.more-details h4 {
+  font-size: 20px;
+}
+.first-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.second-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+/* Left wrapper */
+
+.left-container {
+  /* height: 95%; */
+  width: 390px;
+  background-color: #5c9ce5;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.plus-wrap {
+  height: 30px;
+  width: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus-wrap span {
+  color: #000000;
+  opacity: 0.2;
+}
+.dot-navigation {
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  /* Reset styles */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dot-navigation__item {
+  /* Rounded border */
+  border-radius: 9999px;
+  height: 0.75rem;
+  width: 0.75rem;
+
+  /* Inactive dot */
+  /* background-color: transparent; */
+  border: 1px solid #d1d5db;
+
+  /* OPTIONAL: Spacing between dots */
+  margin: 0 0.25rem;
+}
+
+/* Active dot */
+.dot-navigation__item--active {
+  border-radius: 9999px;
+  height: 0.85rem;
+  width: 1.95rem;
+  background-color: #ffffff;
+  margin: 0 0.25rem;
+  border: 1px solid #d1d5db;
+}
+
+.city-date {
+  margin-top: 80px;
+}
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.city-name {
+  display: flex;
+}
+.city-name span {
+  color: #ffffff;
+  font-size: 20px;
+  transform: rotate(45deg);
+  margin-right: 5px;
+  font-weight: 100;
+}
+
+.city-name-span {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 100;
+}
+.sunrise {
+  display: flex;
+  align-items: center;
+}
+.sunrise span {
+  color: #ffffff;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.sunrise-time {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.date-today {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.temp-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.temp-display span {
+  color: #000000;
+  opacity: 0.3;
+}
+.temp-show {
+  font-size: 100px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.sunny {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.sunny p {
+  font-size: 25px;
+  color: #ffffff;
+  margin: 0;
+}
+.sunny span {
+  color: #ffffff;
+  margin-right: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.bottom-image {
+  transform: translate(-19px, 23px);
+  /* transform: translateX(-18.5px);
+  transform: translateY(23px); */
+}
+.image-sunrise {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.graph-comp {
+  width: auto;
+  height: 340px;
+  background-color: #ffffff;
+  border-radius: 39px;
+  padding: 25px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.graph-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.second-col {
+  display: flex;
+  align-items: center;
+}
+
+.graph-title {
+  font-size: 20px;
+}
+
+.rain-precip {
+  width: auto;
+  height: 20px;
+  background: #f1f1f1;
+  font-size: 15px;
+  color: #000000;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+.next-days {
+  margin-left: 20px;
+  height: 20px;
+  background: #f1f1f1;
+  font-size: 15px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+.graph-img {
+  margin-top: 10px;
+  width: 100%;
 }
