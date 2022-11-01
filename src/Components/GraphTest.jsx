@@ -12,42 +12,42 @@ const GraphTest = () => {
   const data = [
     {
       name: '27%',
-      pv: 27,
+      rain: 27,
       amt: 2400,
     },
     {
       name: '29%',
-      pv: 29,
+      rain: 29,
       amt: 2210,
     },
     {
       name: '58%',
-      pv: 58,
+      rain: 58,
       amt: 2290,
     },
     {
       name: '75%',
-      pv: 75,
+      rain: 75,
       amt: 2000,
     },
     {
       name: '33%',
-      pv: 33,
+      rain: 33,
       amt: 2181,
     },
     {
       name: '20%',
-      pv: 20,
+      rain: 20,
       amt: 2500,
     },
     {
       name: '73%',
-      pv: 73,
+      rain: 73,
       amt: 2100,
     },
     {
       name: '49%',
-      pv: 49,
+      rain: 49,
       amt: 2100,
     },
   ];
@@ -81,7 +81,7 @@ const GraphTest = () => {
 
           <Area
             type="monotone"
-            dataKey="pv"
+            dataKey="rain"
             stroke="#5C9CE5"
             fillOpacity={1}
             fill="url(#colorPv)"

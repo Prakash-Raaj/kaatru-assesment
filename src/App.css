@@ -22,6 +22,7 @@ body {
   width: auto;
   padding: 40px;
   border-radius: 20px;
+  margin-left: 30px;
 }
 .intro {
   display: flex;
@@ -260,11 +261,11 @@ body {
 .more-details {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .more-details h4 {
-  margin-left: 25px;
+  margin-left: 20px;
   font-size: 20px;
 }
 .first-row {
@@ -441,13 +442,15 @@ body {
 }
 
 .graph-comp {
-  width: 88%;
+  width: auto;
   height: auto;
   background-color: #ffffff;
   border-radius: 39px;
   padding: 25px;
-  margin-top: 20px;
-  margin-left: 40px;
+  margin-top: 40px;
+  margin-left: 18px;
+  margin-right: 40px;
+  padding-right: 50px;
 }
 
 .graph-header {
