@@ -1,5 +1,4 @@
 import React from 'react';
-import graph from '../assets/images/graph1.png';
 import GraphTest from './GraphTest';
 
 const Graph = () => {
