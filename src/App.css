@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: 'Nunito', sans-serif;
-  background: #adcef4;
+  /* background: #adcef4; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +27,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 20px;
 }
 .intro h3 {
   margin-top: 0px;
@@ -259,10 +260,11 @@ body {
 .more-details {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .more-details h4 {
+  margin-left: 25px;
   font-size: 20px;
 }
 .first-row {
@@ -440,7 +442,7 @@ body {
 
 .graph-comp {
   width: auto;
-  height: 340px;
+  height: auto;
   background-color: #ffffff;
   border-radius: 39px;
   padding: 25px;
@@ -490,4 +492,10 @@ body {
 .graph-img {
   margin-top: 10px;
   width: 100%;
+}
+
+.area-graph {
+  width: 100%;
+  margin-left: 50px;
+  margin-top: 50px;
 }

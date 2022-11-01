@@ -1,5 +1,6 @@
 import React from 'react';
 import graph from '../assets/images/graph1.png';
+import GraphTest from './GraphTest';
 
 const Graph = () => {
   return (
@@ -17,7 +18,9 @@ const Graph = () => {
           </div>
         </div>
       </div>
-      <img src={graph} alt="graph" className="graph-img" />
+      <div className="area-graph">
+        <GraphTest />
+      </div>
     </div>
   );
 };
