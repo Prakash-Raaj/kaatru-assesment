@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  width: 80vw;
+  width: auto;
   margin-top: 50px;
   border-radius: 20px;
   background-color: #e4f1ff;
@@ -19,7 +19,7 @@ body {
 }
 
 .right-wrapper {
-  width: 1900px;
+  width: auto;
   padding: 40px;
   border-radius: 20px;
 }
@@ -498,4 +498,10 @@ body {
   width: 100%;
   margin-left: 50px;
   margin-top: 50px;
+}
+
+.app {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
 }
